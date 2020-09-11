@@ -1,5 +1,10 @@
 # Java Application CPU Profiling
-How to do Java Application's CPU Profiling using Java VisualVM
+How to do Java Application's CPU Profiling using Java VisualVM to figure out where most of the time is spent by a Java program.
+
+## CPU Profiling
+CPU Profiler works by taking thread dumps of the system at some regular interval (if using Sampling Profiler) and reporting on where it observes time being spent. This will allow developers to focus on the parts in their applications where most of the execution time is spent and try to optimize such problem areas by taking appropriate corrective actions.
+
+The sampling rate is configurable. Other option is Tracing Profiler but it may cause more performance overheads.
 
 ## Using Java VisualVM For CPU Profiling
 
